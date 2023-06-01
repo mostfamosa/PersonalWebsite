@@ -19,6 +19,7 @@ function Banner() {
         }, delta)
 
         return () => { clearInterval(ticker) }
+        // eslint-disable-next-line
     }, [text])
 
     const handleClickToConnect = () => {

@@ -176,7 +176,7 @@ function Projects() {
                     </Col>
                 </Row>
             </Container>
-            <img className="background-image-right" src={colorSharp2} />
+            <img alt="bg-proj" className="background-image-right" src={colorSharp2} />
         </section>
 
     );
