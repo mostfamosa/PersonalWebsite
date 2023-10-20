@@ -16,10 +16,46 @@ import chatApp from '../assets/img/chatApp.png';
 import chatAppServer from '../assets/img/chatappServer.jpg';
 import crud from '../assets/img/crud.jpg';
 import google from '../assets/img/google.jpg';
-
-
+import automation from '../assets/img/qaAutomation.png';
+import selenium from '../assets/img/selenium.jpg';
+import cucumber from '../assets/img/cucumber.png';
+import cucumberfinal from '../assets/img/cucumberfinal.jpg';
+import appium from '../assets/img/appium.jpeg';
 
 function Projects() {
+
+    const myQaBootcampProjects = [
+        {
+            title: "Appium",
+            description: "Appium Execrise's And Project ",
+            imgUrl: appium,
+            herf:"https://github.com/mostfamosa/Appium",
+        },
+        {
+            title: "Selenium & Cucumber Final Project",
+            description: "Selenium And Cucumber Project For RamiLevi WebSite (Team Work)",
+            imgUrl: cucumberfinal,
+            herf:"https://github.com/mostfamosa/Selenium-Cucumber-Final-Project",
+        },
+        {
+            title: "Selenium & Cucumber",
+            description: "Selenium And Cucumber Exercise's And Summary Project",
+            imgUrl: cucumber,
+            herf:"https://github.com/mostfamosa/Selenium-Cucumber",
+        },
+        {
+            title: "Selenium",
+            description: "Java, WebDriver, Exercise's And Summary Project",
+            imgUrl: selenium,
+            herf:"https://github.com/mostfamosa/Selenium-Intro",
+        },
+        {
+            title: "QA Automation Bootcamp Exercise's",
+            description: "The First 5 Weeks Of The Bootcamp",
+            imgUrl: automation,
+            herf:"https://github.com/mostfamosa/Automation-Bootcamp",
+        },
+    ];
 
     const myprojects = [
         {
@@ -128,7 +164,7 @@ function Projects() {
                                     <Nav.Link eventKey="second">Java Spring Boot</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item >
-                                    <Nav.Link eventKey="third">Comming Soon!</Nav.Link>
+                                    <Nav.Link eventKey="third">QA Automation Bootcamp</Nav.Link>
                                 </Nav.Item>
                             </Nav>
                             <TabContent>
@@ -169,7 +205,24 @@ function Projects() {
                                         }
                                     </Row>
                                 </TabPane>
-                                <TabPane eventKey="third">Projects In a Working Progress . . .</TabPane>
+                                <TabPane eventKey="third">Projects Based On QA Automation Engineer Bootcamp By Atech
+                                <br/><br/><br/><br/>
+                                    <Row>
+                                        {
+                                            myQaBootcampProjects.map((project, index) => {
+                                                return (
+                                                    <ProjectCard
+                                                        key={index}
+                                                        projectTitle={project.title}
+                                                        projectDesc={project.description}
+                                                        projectImg={project.imgUrl}
+                                                        projectUrl = {project.herf}
+                                                    />
+                                                )
+                                            })
+                                        }
+                                    </Row>
+                                </TabPane>
                             </TabContent>
                         </TabContainer>
 
