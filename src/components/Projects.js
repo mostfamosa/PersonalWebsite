@@ -21,10 +21,24 @@ import selenium from '../assets/img/selenium.jpg';
 import cucumber from '../assets/img/cucumber.png';
 import cucumberfinal from '../assets/img/cucumberfinal.jpg';
 import appium from '../assets/img/appium.jpeg';
+import playwright from '../assets/img/playwright.png';
+import terminalx from '../assets/img/terminalx.png';
 
 function Projects() {
 
     const myQaBootcampProjects = [
+        {
+            title: "Playwright Final Project",
+            description: "Playwright Final Project For TerminalX WebSite (Team Work) We Got 97/100 The TOP Score In Class",
+            imgUrl: terminalx,
+            herf:"https://github.com/mostfamosa/TerminalX-Playwright-Final-Project",
+        },
+        {
+            title: "Playwright",
+            description: "Playwright Execrise's And Projects",
+            imgUrl: playwright,
+            herf:"https://github.com/mostfamosa/Playwright",
+        },
         {
             title: "Appium",
             description: "Appium Execrise's And Project ",
@@ -33,7 +47,7 @@ function Projects() {
         },
         {
             title: "Selenium & Cucumber Final Project",
-            description: "Selenium And Cucumber Project For RamiLevi WebSite (Team Work)",
+            description: "Selenium And Cucumber Project For RamiLevi WebSite (Team Work) We Got 91/100 The TOP Score In Class",
             imgUrl: cucumberfinal,
             herf:"https://github.com/mostfamosa/Selenium-Cucumber-Final-Project",
         },
