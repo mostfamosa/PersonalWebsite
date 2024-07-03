@@ -8,7 +8,7 @@ function Banner() {
 
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleted, setIsDeleted] = useState(false);
-    const toRotate = ["Software Engineer", "Java Developer", "QA Automation Engineer"];
+    const toRotate = ["QA Automation Engineer", "Java Developer", "Software Engineer"];
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300 - Math.random() * 100);
     const period = 2000;
