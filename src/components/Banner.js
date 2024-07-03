@@ -8,7 +8,7 @@ function Banner() {
 
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleted, setIsDeleted] = useState(false);
-    const toRotate = ["Software Engineer", "Java Developer", "FullStack Engineer", "Web Developer"];
+    const toRotate = ["Software Engineer", "Java Developer", "QA Automation Engineer"];
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300 - Math.random() * 100);
     const period = 2000;
@@ -57,7 +57,7 @@ function Banner() {
                     <Col xs={12} md={6} xl={7}>
                         <span className="tagline">Welcome To My WebSite</span>
                         <h1>{`I'm Mostafa Mossa a `}<span className="wrap">{text}</span></h1>
-                        <p>Gained a Bachelor's degree from Ort Braude College. Through a passion for problem-solving and innovation, I have honed my skills in software development and gained practical experience through internships and real-world projects. I believe in the transformative power of technology and embrace the responsibilities of continuous learning, teamwork, and effective communication. With a commitment to making a meaningful impact, I aspire to contribute to projects that solve complex problems and enhance user experiences. As a dedicated and passionate software engineer, I am ready to embrace challenges and leave a lasting mark on the field of technology. </p>
+                        <p>B.Sc. Software Engineering graduate and Java developer Start@Google Bootcamp alumnus, with a comprehensive background in Java best practices, design patterns, Git, and web development.<br></br>Completed an intensive 6-month QA Automation Bootcamp, showcasing expertise in developing automation solutions. Notably, served as a QA Automation Engineer intern at GoTech, contributing to projects involving Playwright, Appium, and Selenium. Specializing in end-to-end project development for diverse clients, utilizing Java, TypeScript, and Spring Boot for web servers. Currently seeking a role as a QA Automation Engineer or Java Developer or Software Engineer, leveraging my skills and experience to contribute effectively to dynamic teams.</p>
                         <button onClick={handleClickToConnect}>Let's Connect <ArrowRightCircle size={25} /></button>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
