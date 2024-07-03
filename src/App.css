@@ -2,10 +2,12 @@
   0% {
     transform: scale(1);
   }
+
   50% {
     /* Changed to 1.25 */
     transform: scale(1.5);
   }
+
   100% {
     /* Changed to 1.5 */
     transform: scale(1);
@@ -62,6 +64,10 @@ h5 {
   margin: 0;
   padding: 0;
   line-height: normal;
+}
+
+#aboutme {
+  text-align: left;
 }
 
 p,
@@ -347,7 +353,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-left: 25px;
 }
 
-.banner .container{
+.banner .container {
   animation: fadeIn 5s;
 }
 
@@ -510,7 +516,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #fff;
 }
 
-.proj-imgbx .img{
+.proj-imgbx .img {
   height: inherit;
 }
 
@@ -573,15 +579,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 60px 0 200px 0;
 }
 
-.contact img:hover{
+.contact img:hover {
   width: 100%;
   animation: fadeIn 2s;
   transform-origin: center;
 }
 
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .contact h2 {
@@ -680,10 +691,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 26%;
 }
 
-.footer #carer2{
+.footer #carer2 {
   width: 100%;
   margin-top: -120px;
 }
+
 .footer p {
   font-weight: 400;
   font-size: 14px;
